@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap");
+
+:root {
+  --dsc-color-bg-primary: #e8e8e8;
+  --dsc-color-bg-secondary: #ff0000;
+  --dsc-color-bg-tertiary: #636363;
+
+  --dsc-color-card-bg: #fff;
+  --dsc-color-card-border: #d9d9d9;
+
+  --dsc-color-btn-primary: #3483fa;
+  --dsc-color-btn-inverse: #fff;
+
+  --dsc-color-font-primary: #636363;
+  --dsc-color-font-secondary: #0caf1d;
+  --dsc-color-font-tertiary: #fff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,16 +26,16 @@ h1 {
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
-  color: white;
+  color: var(--dsc-color-font-tertiary);
 }
 
 html,
 body {
-  background-color: #e8e8e8;
+  background-color: var(--dsc-color-bg-primary);
 }
 
 header {
-  background-color: #ff0000;
+  background-color: var(--dsc-color-bg-secondary);
   height: 70px;
   display: flex;
   align-items: center;
@@ -33,7 +50,7 @@ nav {
 a,
 a:hover {
   text-decoration: none;
-  color: white;
+  color: var(--dsc-color-font-tertiary);
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -45,13 +62,13 @@ a:hover {
 }
 
 .card {
-  background: #fff;
+  background: var(--dsc-color-card-bg) ;
   border-radius: 10px;
-  border: 1px solid #d9d9d9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .line-bottom {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
 .mb20 {
@@ -69,15 +86,15 @@ a:hover {
 }
 
 .btn-blue {
-  background: #3483fa;
-  color: #fff;
+  background: var(--dsc-color-btn-primary);
+  color: var(--dsc-color-btn-inverse);
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .btn-white {
-  background: #fff;
-  color: #3483fa;
-  border: 1px solid #3483fa;
+  background: var(--dsc-color-btn-inverse);
+  color: var(--dsc-color-btn-primary);
+  border: 1px solid var(--dsc-color-btn-primary);
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -87,4 +104,4 @@ a:hover {
   display: grid;
   grid-gap: 20px;
 }
- 
+
