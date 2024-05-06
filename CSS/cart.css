@@ -2,40 +2,43 @@
 
 @import url("style.css");
 
-.card-total-container h3 {
+.dsc-card-total-container h3 {
   padding: 0 20px 10px 20px;
-  font-size: 16px;
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: var(--dsc-color-font-secondary);
   text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.cart-item-container {
+.dsc-cart-item-container {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
 }
 
-#cart-container {
+#cart-container-section {
   padding: 20px 0;
 }
 
-.cart-item-left {
+.dsc-cart-item-left {
   display: flex;
 }
 
-.cart-item-quantity-container {
+.dsc-cart-item-quantity-container {
   display: flex;
   font-size: 20px;
   font-weight: 700;
-align-items: center;
+  align-items: center;
 }
 
-.cart-item-quantity-container p {
-    margin: 0 5px;
+.dsc-cart-item-quantity-container p {
+  margin: 0 5px;
 }
 
-.cart-item-right {
+.dsc-cart-item-right {
   padding: 10px 0;
   color: var(--dsc-color-font-secondary);
   font-size: 12px;
@@ -45,20 +48,40 @@ align-items: center;
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.cart-item-description{
-    padding: 10px 0;
-    color: var(--dsc-color-font-primary);
+.dsc-cart-item-description {
+  padding: 10px 0;
+  color: var(--dsc-color-font-primary);
 }
 
-.cart-item-description h3{
-    font-size: 12px;
-    font-weight: 700;
-    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+.dsc-cart-item-description h3 {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.cart-item-quantity-btn{
-  color: var(--dsc-color-btn-primary);  
+.dsc-cart-item-quantity-btn {
+  color: var(--dsc-color-btn-primary);
   cursor: pointer;
 }
 
+.brd-btn {
+  padding: 5px 10px;
+  border-radius: 10px; /* Borda redonda */
+  background-color: #008000;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.brd-btn:hover {
+  background-color: #005700;
+}
+
+.dsc-btn-white:hover {
+  border: 1px solid  var(--dsc-color-bg-secondary);
+  color:  var(--dsc-color-bg-secondary);;
+}

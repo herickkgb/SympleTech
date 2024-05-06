@@ -55,27 +55,27 @@ a:hover {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.container {
+.dsc-container {
   width: 100%;
   max-width: 960px;
   margin: 20px auto;
 }
 
-.card {
+.dsc-card {
   background: var(--dsc-color-card-bg) ;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.line-bottom {
+.dsc-line-bottom {
   border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
-.mb20 {
+.dsc-mb20 {
   margin-bottom: 20px;
 }
 
-.btn {
+.dsc-btn {
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -85,23 +85,29 @@ a:hover {
   align-items: center;
 }
 
-.btn-blue {
+.dsc-btn-green {
   background: var(--dsc-color-btn-primary);
   color: var(--dsc-color-btn-inverse);
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    cursor: pointer;
 }
-.btn-white {
+.dsc-btn-white {
   background: var(--dsc-color-btn-inverse);
   color: var(--dsc-color-btn-primary);
   border: 1px solid var(--dsc-color-btn-primary);
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    cursor: pointer;
 }
 
-.btn-page-container {
+.dsc-btn-page-container {
   width: 220px;
   display: grid;
   grid-gap: 20px;
 }
 
+
+.dsc-green:hover {
+  background-color: #005700;
+}
