@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap");
 
 :root {
+  --font-family: "Lexend", "Helvetica Neue", sans-serif;
   --dsc-color-bg-primary: #e8e8e8;
-  --dsc-color-bg-secondary: #007DC3  ;
+  --dsc-color-bg-secondary: #007dc3;
   --dsc-color-bg-tertiary: #636363;
 
   --dsc-color-card-bg: #fff;
   --dsc-color-card-border: #d9d9d9;
 
-  --dsc-color-btn-primary: #008000  ;
+  --dsc-color-btn-primary: #008000;
   --dsc-color-btn-inverse: #fff;
 
   --dsc-color-font-primary: #636363;
@@ -21,10 +22,12 @@
   padding: 0;
   margin: 0;
 }
+main {
+  padding: 0 20px;
+}
 
 h1 {
-  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: var(--font-family);
 
   color: var(--dsc-color-font-tertiary);
 }
@@ -34,11 +37,31 @@ body {
   background-color: var(--dsc-color-bg-primary);
 }
 
+.dsc-green:hover {
+  background-color: #005700;
+}
+
+/* ----------------------Generic styles------------------------*/
+.dsc-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.margin-top-name {
+  padding: 10px;
+}
+
+.dsc-mb20 {
+  margin-bottom: 20px;
+}
+/* ----------------------Header styles------------------------*/
 header {
   background-color: var(--dsc-color-bg-secondary);
   height: 70px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 nav {
@@ -47,34 +70,33 @@ nav {
   align-items: center;
 }
 
+nav a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
 a,
 a:hover {
   text-decoration: none;
   color: var(--dsc-color-font-tertiary);
-  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: var(--font-family);
 }
-
-.dsc-container {
-  width: 100%;
-  max-width: 960px;
-  margin: 20px auto;
-}
-
 .dsc-card {
-  background: var(--dsc-color-card-bg) ;
+  background: var(--dsc-color-card-bg);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* ----------------------Line styles------------------------*/
 .dsc-line-bottom {
   border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
-.dsc-mb20 {
-  margin-bottom: 20px;
-}
-
+/* ----------------------Button styles------------------------*/
 .dsc-btn {
   border-radius: 4px;
   font-size: 16px;
@@ -88,26 +110,27 @@ a:hover {
 .dsc-btn-green {
   background: var(--dsc-color-btn-primary);
   color: var(--dsc-color-btn-inverse);
-  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    cursor: pointer;
+  font-family: var(--font-family);
+  cursor: pointer;
 }
 .dsc-btn-white {
   background: var(--dsc-color-btn-inverse);
   color: var(--dsc-color-btn-primary);
   border: 1px solid var(--dsc-color-btn-primary);
-  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    cursor: pointer;
+  font-family: var(--font-family);
+  cursor: pointer;
 }
 
 .dsc-btn-page-container {
-  width: 220px;
+  width: 100%;
   display: grid;
   grid-gap: 20px;
 }
 
 
-.dsc-green:hover {
-  background-color: #005700;
+/* Midea*/
+@media screen and (min-width: 576px) {
+  .dsc-btn-page-container {
+    width: 200px; /* Tamanho fixo do botão */
+  }
 }
