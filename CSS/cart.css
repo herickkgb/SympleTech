@@ -4,7 +4,7 @@
   padding: 0 20px 10px 20px;
   font-family: var(--font-family);
   color: var(--dsc-color-font-secondary);
-  text-align: right;
+  text-align: left;
   font-size: 24px;
   padding: 10px;
   border-radius: 5px;
@@ -12,7 +12,7 @@
 }
 .dsc-cart-item-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 0 20px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .dsc-cart-item-right {
-  padding: 10px 0;
+  padding-bottom: 10px;
   color: var(--dsc-color-font-secondary);
   font-size: 12px;
   font-weight: 200;
@@ -80,4 +80,26 @@
 .dsc-btn-white:hover {
   border: 1px solid var(--dsc-color-bg-secondary);
   color: var(--dsc-color-bg-secondary);
+}
+
+/* Midea*/
+@media screen and (max-width: 400px) {
+  .tamanho-min {
+    width: 100px; /* Largura da imagem */
+    height: 63px; /* Altura da imagem */
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .dsc-cart-item-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dsc-cart-item-right {
+    padding-top: 10px;
+  }
+
+  .dsc-card-total-container h3{
+    text-align: right;
+  }
 }
